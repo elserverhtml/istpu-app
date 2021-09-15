@@ -14,21 +14,9 @@ function PersonCard(props) {
 }
 
 class LessonCard extends React.Component {
-    getRequest() {
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://shrouded-journey-64297.herokuapp.com/index.php');
-        xhr.send({login: "еуче"});
-        xhr.onload = function() {
-            if (xhr.status !== 200) { // анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
-              alert(`Ошибка ${xhr.status}: ${xhr.statusText}`); // Например, 404: Not Found
-            } else { // если всё прошло гладко, выводим результат
-              alert(`Готово, получили ${xhr.responseText} байт`); // response -- это ответ сервера
-            }
-          };
-    }
     render() {
         return (
-            <div className="card" onClick = {() => this.getRequest()}>
+            <div className="card">
                 <div className="card-text-block">
                     <div className="card-text-main">{this.props.data[0]}</div>
                     <div className="card-text-main">{this.props.data[1]}</div>
@@ -53,14 +41,33 @@ class App extends React.Component {
         }
     }
 
-    cardClick() {
-        this.setState({lessons : this.state.lessons.concat([ "1" ]) });
+    cardClick(obj) {
+        this.setState({lessons : this.state.lessons.concat(obj) });
+    }
+
+    getRequest() {
+        let self = this;
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://shrouded-journey-64297.herokuapp.com/index.php');
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send();
+        xhr.onload = function() {
+            if (xhr.status !== 200) {
+              alert(`Ошибка ${xhr.status}: ${xhr.statusText}`);
+            } else {
+              self.cardClick([JSON.parse(xhr.responseText)]);
+            }
+          };
+    }
+
+    componentDidMount() {
+        this.getRequest();
     }
 
     render() {
         return (
             <div className="main-screen">
-                <div className="header" onClick = {() => this.cardClick()}>
+                <div className="header" onClick = {() => this.getRequest()}>
                     <PersonCard />
                 </div>
                 <div className="line" />
