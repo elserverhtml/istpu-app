@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/istpu-app/static/css/main.f736e406.chunk.css",
-    "main.js": "/istpu-app/static/js/main.72118f2f.chunk.js",
-    "main.js.map": "/istpu-app/static/js/main.72118f2f.chunk.js.map",
+    "main.js": "/istpu-app/static/js/main.38a29e58.chunk.js",
+    "main.js.map": "/istpu-app/static/js/main.38a29e58.chunk.js.map",
     "runtime-main.js": "/istpu-app/static/js/runtime-main.0e06f647.js",
     "runtime-main.js.map": "/istpu-app/static/js/runtime-main.0e06f647.js.map",
     "static/js/2.c5f45c57.chunk.js": "/istpu-app/static/js/2.c5f45c57.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.0e06f647.js",
     "static/js/2.c5f45c57.chunk.js",
     "static/css/main.f736e406.chunk.css",
-    "static/js/main.72118f2f.chunk.js"
+    "static/js/main.38a29e58.chunk.js"
   ]
 }
