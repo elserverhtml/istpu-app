@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/istpu-app/static/css/main.a617e044.chunk.css",
+    "main.js": "/istpu-app/static/js/main.198663b6.chunk.js",
+    "main.js.map": "/istpu-app/static/js/main.198663b6.chunk.js.map",
+    "runtime-main.js": "/istpu-app/static/js/runtime-main.1fd34ea7.js",
+    "runtime-main.js.map": "/istpu-app/static/js/runtime-main.1fd34ea7.js.map",
+    "static/js/2.fe6f9989.chunk.js": "/istpu-app/static/js/2.fe6f9989.chunk.js",
+    "static/js/2.fe6f9989.chunk.js.map": "/istpu-app/static/js/2.fe6f9989.chunk.js.map",
+    "static/js/3.7a3f7d35.chunk.js": "/istpu-app/static/js/3.7a3f7d35.chunk.js",
+    "static/js/3.7a3f7d35.chunk.js.map": "/istpu-app/static/js/3.7a3f7d35.chunk.js.map",
+    "index.html": "/istpu-app/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/istpu-app/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.fe6f9989.chunk.js.LICENSE.txt": "/istpu-app/static/js/2.fe6f9989.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/istpu-app/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fd34ea7.js",
+    "static/js/2.fe6f9989.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.198663b6.chunk.js"
+  ]
+}
